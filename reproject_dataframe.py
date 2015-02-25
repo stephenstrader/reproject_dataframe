@@ -13,7 +13,7 @@ import geopandas as gpd
 shapefile='C:\\Users\\StephenStrader\\Desktop\\reproject_dataframe\\tornado.shp'
 
 #read shapefile as GeoDataFrame and reproject to WGS84 (EPSG = 4326)
-StormData = gpd.GeoDataFrame.from_file(shapefile).to_crs(epsg=4326) 
+SD = gpd.GeoDataFrame.from_file(shapefile).to_crs(epsg=4326) 
 
 
 
